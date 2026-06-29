@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>青葉 첫빛 - 1화</title>
+  <meta name="description" content="일본 배경의 풋풋한 청춘 연애 웹툰 青葉 첫빛 1화 공개 페이지입니다.">
+  <meta name="theme-color" content="#111111">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="青葉 첫빛 - 1화">
+  <meta property="og:description" content="비 오는 아침, 학교와 사진부 사이에서 시작되는 풋풋한 청춘 연애 웹툰.">
+  <meta property="og:image" content="panels/panel_001.png">
+  <style>
+    :root {
+      --page-bg: #111111;
+      --strip-bg: #ffffff;
+      --text-primary: #f7f7f7;
+      --text-muted: #aaaaaa;
+      --header-bg: #161616;
+      --border-subdued: #2a2a2a;
+      --accent-soft: #d7efe6;
+      --strip-max: 720px;
+      --space-1: 4px;
+      --space-2: 8px;
+      --space-3: 12px;
+      --space-4: 16px;
+      --space-5: 20px;
+      --space-6: 24px;
+      --space-8: 32px;
+      --space-10: 40px;
+      color-scheme: dark;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      background: var(--page-bg);
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--page-bg);
+      color: var(--text-primary);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+      letter-spacing: 0;
+      text-rendering: optimizeLegibility;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid var(--border-subdued);
+      background: color-mix(in srgb, var(--header-bg) 92%, transparent);
+      backdrop-filter: blur(14px);
+    }
+
+    .header-inner {
+      width: min(100%, var(--strip-max));
+      margin: 0 auto;
+      padding: var(--space-3) var(--space-4);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--space-4);
+    }
+
+    .brand {
+      min-width: 0;
+    }
+
+    .eyebrow,
+    .meta {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(20px, 5.4vw, 28px);
+      line-height: 1.18;
+      font-weight: 760;
+      word-break: keep-all;
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2);
+      flex: 0 0 auto;
+    }
+
+    .button {
+      min-height: 36px;
+      padding: 0 var(--space-3);
+      border: 1px solid var(--border-subdued);
+      border-radius: 8px;
+      background: transparent;
+      color: var(--text-primary);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 650;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .button.primary {
+      border-color: transparent;
+      background: var(--accent-soft);
+      color: var(--page-bg);
+    }
+
+    .intro {
+      width: min(100%, var(--strip-max));
+      margin: 0 auto;
+      padding: var(--space-8) var(--space-4) var(--space-6);
+      border-bottom: 1px solid var(--border-subdued);
+    }
+
+    .intro p {
+      max-width: 56ch;
+      margin: var(--space-3) 0 0;
+      color: var(--text-muted);
+      font-size: 15px;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+
+    .intro-list {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--space-2);
+      margin-top: var(--space-5);
+      padding: 0;
+      list-style: none;
+    }
+
+    .intro-list li {
+      min-height: 56px;
+      padding: var(--space-3);
+      border: 1px solid var(--border-subdued);
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: var(--space-1);
+    }
+
+    .intro-list strong {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    .intro-list span {
+      color: var(--text-muted);
+      font-size: 12px;
+      line-height: 1.3;
+    }
+
+    .reader {
+      width: min(100%, var(--strip-max));
+      margin: 0 auto;
+      background: var(--strip-bg);
+    }
+
+    .panel {
+      margin: 0;
+      line-height: 0;
+      background: var(--strip-bg);
+    }
+
+    .panel img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: var(--strip-bg);
+    }
+
+    .chapter-gap {
+      height: 18px;
+      background: var(--strip-bg);
+    }
+
+    .site-footer {
+      width: min(100%, var(--strip-max));
+      margin: 0 auto;
+      padding: var(--space-8) var(--space-4) var(--space-10);
+      color: var(--text-muted);
+      text-align: center;
+      border-top: 1px solid var(--border-subdued);
+    }
+
+    .site-footer strong {
+      display: block;
+      color: var(--text-primary);
+      font-size: 16px;
+      line-height: 1.4;
+    }
+
+    .site-footer p {
+      margin: var(--space-2) auto 0;
+      max-width: 46ch;
+      font-size: 14px;
+      line-height: 1.7;
+      word-break: keep-all;
+    }
+
+    @media (max-width: 520px) {
+      .header-inner {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .actions {
+        width: 100%;
+      }
+
+      .button {
+        flex: 1 1 0;
+      }
+
+      .intro-list {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <p class="eyebrow">Japan youth romance webtoon</p>
+        <h1>青葉 첫빛</h1>
+        <p class="meta">1화 · 54패널 · 세로 스크롤</p>
+      </div>
+      <nav class="actions" aria-label="웹툰 이동">
+        <a class="button primary" href="#reader">바로 보기</a>
+        <a class="button" href="#info">작품 정보</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="intro" id="info" aria-labelledby="episode-title">
+      <p class="eyebrow">Episode 01</p>
+      <h2 id="episode-title">비 오는 아침, 사진 한 장에서 시작된 첫빛</h2>
+      <p>
+        오래된 천문사진을 찾는 전학생 리오와, 매일 하늘을 찍는 사진부 아오바가
+        방과 후의 조용한 교실에서 서로의 하루를 조금씩 알아가는 1화입니다.
+      </p>
+      <ul class="intro-list" aria-label="작품 정보">
+        <li><strong>배경</strong><span>일본 고등학교와 사진부</span></li>
+        <li><strong>분위기</strong><span>풋풋한 청춘 연애</span></li>
+        <li><strong>형식</strong><span>모바일 우선 웹툰 뷰어</span></li>
+      </ul>
+    </section>
+
+    <section class="reader" id="reader" aria-label="青葉 첫빛 1화 본문">
+      <figure class="panel"><img src="panels/panel_001.png" width="864" height="351" alt="青葉 첫빛 1화 패널 001" loading="eager" decoding="async" fetchpriority="high"></figure>
+      <figure class="panel"><img src="panels/panel_002.png" width="864" height="310" alt="青葉 첫빛 1화 패널 002" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_003.png" width="864" height="287" alt="青葉 첫빛 1화 패널 003" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_004.png" width="864" height="293" alt="青葉 첫빛 1화 패널 004" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_005.png" width="864" height="220" alt="青葉 첫빛 1화 패널 005" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_006.png" width="864" height="355" alt="青葉 첫빛 1화 패널 006" loading="lazy" decoding="async"></figure>
+      <div class="chapter-gap" aria-hidden="true"></div>
+      <figure class="panel"><img src="panels/panel_007.png" width="864" height="304" alt="青葉 첫빛 1화 패널 007" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_008.png" width="864" height="302" alt="青葉 첫빛 1화 패널 008" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_009.png" width="864" height="301" alt="青葉 첫빛 1화 패널 009" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_010.png" width="864" height="299" alt="青葉 첫빛 1화 패널 010" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_011.png" width="864" height="276" alt="青葉 첫빛 1화 패널 011" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_012.png" width="864" height="333" alt="青葉 첫빛 1화 패널 012" loading="lazy" decoding="async"></figure>
+      <div class="chapter-gap" aria-hidden="true"></div>
+      <figure class="panel"><img src="panels/panel_013.png" width="874" height="299" alt="青葉 첫빛 1화 패널 013" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_014.png" width="874" height="299" alt="青葉 첫빛 1화 패널 014" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_015.png" width="874" height="299" alt="青葉 첫빛 1화 패널 015" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_016.png" width="874" height="299" alt="青葉 첫빛 1화 패널 016" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_017.png" width="874" height="299" alt="青葉 첫빛 1화 패널 017" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_018.png" width="874" height="304" alt="青葉 첫빛 1화 패널 018" loading="lazy" decoding="async"></figure>
+      <div class="chapter-gap" aria-hidden="true"></div>
+      <figure class="panel"><img src="panels/panel_019.png" width="853" height="307" alt="青葉 첫빛 1화 패널 019" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_020.png" width="853" height="307" alt="青葉 첫빛 1화 패널 020" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_021.png" width="853" height="307" alt="青葉 첫빛 1화 패널 021" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_022.png" width="853" height="307" alt="青葉 첫빛 1화 패널 022" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_023.png" width="853" height="307" alt="青葉 첫빛 1화 패널 023" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_024.png" width="853" height="309" alt="青葉 첫빛 1화 패널 024" loading="lazy" decoding="async"></figure>
+      <div class="chapter-gap" aria-hidden="true"></div>
+      <figure class="panel"><img src="panels/panel_025.png" width="861" height="304" alt="青葉 첫빛 1화 패널 025" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_026.png" width="861" height="304" alt="青葉 첫빛 1화 패널 026" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_027.png" width="861" height="304" alt="青葉 첫빛 1화 패널 027" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_028.png" width="861" height="304" alt="青葉 첫빛 1화 패널 028" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_029.png" width="861" height="304" alt="青葉 첫빛 1화 패널 029" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_030.png" width="861" height="307" alt="青葉 첫빛 1화 패널 030" loading="lazy" decoding="async"></figure>
+      <div class="chapter-gap" aria-hidden="true"></div>
+      <figure class="panel"><img src="panels/panel_031.png" width="860" height="304" alt="青葉 첫빛 1화 패널 031" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_032.png" width="860" height="304" alt="青葉 첫빛 1화 패널 032" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_033.png" width="860" height="304" alt="青葉 첫빛 1화 패널 033" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_034.png" width="860" height="304" alt="青葉 첫빛 1화 패널 034" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_035.png" width="860" height="304" alt="青葉 첫빛 1화 패널 035" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_036.png" width="860" height="308" alt="青葉 첫빛 1화 패널 036" loading="lazy" decoding="async"></figure>
+      <div class="chapter-gap" aria-hidden="true"></div>
+      <figure class="panel"><img src="panels/panel_037.png" width="861" height="304" alt="青葉 첫빛 1화 패널 037" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_038.png" width="861" height="304" alt="青葉 첫빛 1화 패널 038" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_039.png" width="861" height="304" alt="青葉 첫빛 1화 패널 039" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_040.png" width="1774" height="887" alt="青葉 첫빛 1화 패널 040" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_041.png" width="861" height="304" alt="青葉 첫빛 1화 패널 041" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_042.png" width="861" height="307" alt="青葉 첫빛 1화 패널 042" loading="lazy" decoding="async"></figure>
+      <div class="chapter-gap" aria-hidden="true"></div>
+      <figure class="panel"><img src="panels/panel_043.png" width="861" height="304" alt="青葉 첫빛 1화 패널 043" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_044.png" width="861" height="304" alt="青葉 첫빛 1화 패널 044" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_045.png" width="861" height="304" alt="青葉 첫빛 1화 패널 045" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_046.png" width="1764" height="892" alt="青葉 첫빛 1화 패널 046" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_047.png" width="861" height="304" alt="青葉 첫빛 1화 패널 047" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_048.png" width="861" height="307" alt="青葉 첫빛 1화 패널 048" loading="lazy" decoding="async"></figure>
+      <div class="chapter-gap" aria-hidden="true"></div>
+      <figure class="panel"><img src="panels/panel_049.png" width="861" height="304" alt="青葉 첫빛 1화 패널 049" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_050.png" width="861" height="304" alt="青葉 첫빛 1화 패널 050" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_051.png" width="861" height="304" alt="青葉 첫빛 1화 패널 051" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_052.png" width="861" height="304" alt="青葉 첫빛 1화 패널 052" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_053.png" width="861" height="304" alt="青葉 첫빛 1화 패널 053" loading="lazy" decoding="async"></figure>
+      <figure class="panel"><img src="panels/panel_054.png" width="861" height="307" alt="青葉 첫빛 1화 패널 054" loading="lazy" decoding="async"></figure>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <strong>1화 끝</strong>
+    <p>다음 화에서는 첫빛을 둘러싼 메시지의 발신자가 리오의 오래된 기록과 연결됩니다.</p>
+  </footer>
+</body>
+</html>
